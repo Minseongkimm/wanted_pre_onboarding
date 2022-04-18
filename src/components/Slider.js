@@ -7,10 +7,13 @@ const Slider = () => {
   };
 
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col mt-6 mb-6 ml-3">
       <div>
+        <div className="flex">
+          <p id="result">50</p>
+          <p>%</p>
+        </div>
         <input type="range" onChange={volumeHandler} />
-        <p id="result">50</p>
       </div>
     </section>
   );

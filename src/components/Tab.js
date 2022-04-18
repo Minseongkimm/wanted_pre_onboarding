@@ -9,7 +9,7 @@ const Tab = () => {
   };
 
   return (
-    <div className="mt-6 ml-3">
+    <div className="mb-6 mt-6 ml-3">
       <ul className="flex">
         <li
           className={id === 0 ? 'clickedTab' : 'unClickedTab'}

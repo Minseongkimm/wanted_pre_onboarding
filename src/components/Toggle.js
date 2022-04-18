@@ -12,7 +12,7 @@ const Toggle = () => {
   };
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 mb-6">
       <section className="flex ml-2">
         <div className="h-11 w-32 bg-slate-300 rounded-l-lg  ">
           <div
