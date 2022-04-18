@@ -10,6 +10,14 @@
   @apply m-1 flex justify-center items-center h-9 cursor-pointer rounded-lg;
 }
 
+.unClickedTab {
+  @apply w-20 h-16 flex justify-center items-center;
+}
+
+.clickedTab {
+  @apply w-20 h-16 flex justify-center items-center border-b-4 border-solid border-amber-500;
+}
+
 .App {
   text-align: center;
 }
