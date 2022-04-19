@@ -1,4 +1,5 @@
 import './App.css';
+import Dropdown from './components/Dropdown';
 import Input from './components/Input';
 import Slider from './components/Slider';
 import Tab from './components/Tab';
@@ -15,6 +16,8 @@ function App() {
       <Slider />
       <div>4. Input</div>
       <Input />
+      <div>5. Dropdown</div>
+      <Dropdown />
     </>
   );
 }
