@@ -4,7 +4,6 @@ const Tab = () => {
   const [id, setId] = useState(0);
 
   const clickHandler = (id) => {
-    console.log(id);
     setId(id);
   };
 
@@ -12,7 +11,7 @@ const Tab = () => {
     <div className="mb-6 mt-6 ml-3">
       <ul className="flex">
         <li
-          className={id === 0 ? 'clickedTab' : 'unClickedTab'}
+          className={id === 0 ? 'clickedTab ' : 'unClickedTab'}
           onClick={() => clickHandler(0)}
         >
           감자

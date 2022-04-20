@@ -3,37 +3,34 @@ import { React, useState } from 'react';
 const Toggle = () => {
   const [toggleState, setToggleState] = useState('기본');
 
-  const detailHandler = () => {
-    setToggleState('상세');
-  };
-
-  const basicHandler = () => {
-    setToggleState('기본');
+  const ToggleHandler = (menu) => {
+    setToggleState(menu);
   };
 
   return (
     <div className="mt-6 mb-6">
-      <section className="flex ml-2">
-        <div className="h-11 w-32 bg-slate-300 rounded-l-lg  ">
+      <section className="flex ml-2 bg-slate-200 w-64 rounded-lg">
+        <div className="h-11 w-32 ">
           <div
             className={
               toggleState === '기본'
                 ? 'clickedToggleMenu'
                 : 'unClickedToggleMenu'
             }
-            onClick={basicHandler}
+            onClick={() => ToggleHandler('기본')}
           >
             기본
           </div>
         </div>
-        <div className="h-11 w-32 bg-slate-300 rounded-r-lg transition duration-150">
+
+        <div className="h-11 w-32 ">
           <div
             className={
               toggleState === '상세'
                 ? 'clickedToggleMenu'
                 : 'unClickedToggleMenu'
             }
-            onClick={detailHandler}
+            onClick={() => ToggleHandler('상세')}
           >
             상세
           </div>

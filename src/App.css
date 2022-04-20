@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .clickedToggleMenu {
-  @apply m-1 flex justify-center items-center h-9 bg-white cursor-pointer rounded-lg;
+  @apply m-1 flex justify-center items-center h-9 bg-white cursor-pointer rounded-lg transition-transform translate-x-0;
 }
 
 .unClickedToggleMenu {
@@ -15,7 +15,7 @@
 }
 
 .clickedTab {
-  @apply w-20 h-16 flex justify-center items-center border-b-4 border-solid border-amber-500;
+  @apply w-20 h-16 flex justify-center items-center border-b-2  border-solid border-amber-500;
 }
 
 .App {

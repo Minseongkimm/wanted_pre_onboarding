@@ -9,7 +9,6 @@ const Dropdown = () => {
 
   const getOptionValue = (e) => {
     const result = e.target.innerHTML;
-    console.log('result', result);
     document.getElementById('optionResult').innerHTML = result;
     setIsActive(!isActive);
   };
@@ -17,22 +16,21 @@ const Dropdown = () => {
   return (
     <div className="mt-6 mb-6 ml-2 w-52">
       <div
-        className="border-2 p-2 cursor-grab w-full "
+        className="border-2 p-2 cursor-grab rounded"
         id="optionResult"
         readOnly
         onClick={dropDownHandler}
       >
-        클릭 후 옵션선택
+        Choose Menu
       </div>
       <section className={isActive ? 'mt-2 w-full' : 'mt-2 hidden w-full'}>
-        {/* 아래 input -> search 바  */}
-        <input placeholder="Search" className="border-2 p-2"></input>
-        <ul onClick={getOptionValue}>
-          <li className="" value="고구마">
-            고구마
-          </li>
-          <li>감자</li>
-          <li>설탕</li>
+        <ul
+          className="border-2 border-slate-300 p-2 rounded cursor-pointer"
+          onClick={getOptionValue}
+        >
+          <li className="mb-1 text-gray-700 hover:bg-slate-100">고구마 맛탕</li>
+          <li className="mb-1 text-gray-700 hover:bg-slate-100">감자 볶음</li>
+          <li className="mb-1 text-gray-700 hover:bg-slate-100">오이지 무침</li>
         </ul>
       </section>
     </div>
